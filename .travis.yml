@@ -13,6 +13,7 @@ python:
 
 before_install:
   - pip install codecov
+  - pip install -r requirements.txt
 after_success:
   - coverage report -m
   - codecov
