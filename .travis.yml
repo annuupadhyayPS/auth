@@ -5,9 +5,10 @@ before_script:
     - sleep 15
 script: coverage run --source=auth -m pytest -vs tests.py
 language: python
+arch:
+  - arm64
+  - amd64
 python:
-    - 3.6
-    - 3.7
     - 3.8
 
 before_install:
